@@ -1,3 +1,12 @@
+/**
+ * Nombre: Knuth Optimization (DP de intervalos)
+ * Descripcion: Optimiza dp[i][j] = min_k(dp[i][k] + dp[k+1][j]) + costo(i,j)
+ *   restringiendo el corte k a [pos(i,j-1), pos(i+1,j)]. Aca resuelve el
+ *   clasico de partir un array en elementos individuales pagando la suma del
+ *   intervalo. Requiere prefix cargado con las sumas prefijas.
+ * Tiempo: O(n^2) (en vez de O(n^3))
+ * Uso: prefix = sumas prefijas de v; solve_Knuth(n);
+ */
 const ll INF = (ll)(1e18+10);
 const int MAXN = 5005;
 vector <ll> prefix;

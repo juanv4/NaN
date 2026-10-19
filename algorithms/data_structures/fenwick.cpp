@@ -1,6 +1,11 @@
-// Description: Fenwick Tree (BIT) for range queries and point updates
-// Time: O(log n) for both queries and updates
-// Usage: BIT bit(v); bit.query(l,r); bit.update(pos,val);
+/**
+ * Nombre: Fenwick Tree (BIT)
+ * Descripcion: Arbol binario indexado para suma de rango [l,r] y update
+ *   puntual (asigna un valor, no suma). Indices 0-indexed. Se construye
+ *   directo desde el vector en O(n).
+ * Tiempo: build O(n), query/update O(log n)
+ * Uso: BIT bit(v); bit.query(l,r); bit.update(pos,val);
+ */
 struct BIT {
     vector <ll> prefix, a;
     BIT(vector <ll> &v) {

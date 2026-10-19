@@ -1,8 +1,11 @@
-/*
-Tiempo de build: O(nlogn)
-Memoria: O(nlogn)
-Tiempo por query: O(logn)
-*/
+/**
+ * Nombre: LCA (Binary Lifting)
+ * Descripcion: Ancestro comun mas bajo con sparse table de ancestros:
+ *   jmp[i][j] es el 2^j-esimo ancestro de i. Tambien da la distancia entre
+ *   dos nodos. Memoria O(n log n). LOG debe cumplir 2^LOG > n.
+ * Tiempo: build O(n log n), query O(log n)
+ * Uso: LCA l(n, g, root); l.lca(x,y); l.dist(x,y);
+ */
 const int MAXN = 200005, LOG = 20;  
 
 struct LCA {

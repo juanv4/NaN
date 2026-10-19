@@ -1,3 +1,11 @@
+/**
+ * Nombre: Dijkstra
+ * Descripcion: Camino minimo de una fuente con pesos no negativos usando cola de
+ *   prioridad. g[u] = {(x,w)}. ans[i] guarda distancia (d) y predecesor (a) para
+ *   reconstruir el camino.
+ * Tiempo: O(E log V)
+ * Uso: auto ans = Dijkstra(start, n, g); // ans[i].d, ans[i].a
+ */
 typedef ll tipo;
 const int MAXN = 200005;
 

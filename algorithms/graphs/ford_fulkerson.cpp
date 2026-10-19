@@ -1,3 +1,11 @@
+/**
+ * Nombre: Ford-Fulkerson (Max Flow)
+ * Descripcion: Flujo maximo buscando caminos de aumento con DFS sobre el grafo
+ *   residual (capacidades en un mapa por par de nodos). Para aristas multiples
+ *   usar cap[{x,y}] += z en add_edge.
+ * Tiempo: O((V+E) * maxflow)
+ * Uso: FordFulkerson ff(n); ff.add_edge(x,y,cap); ff.max_flow(s,t);
+ */
 struct FordFulkerson {
 	// Time complexity ((V+E) * MAXFLOW)
 	

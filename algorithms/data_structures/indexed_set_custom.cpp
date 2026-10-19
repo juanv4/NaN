@@ -1,4 +1,12 @@
-// Indexed Set (Treap) - O(log n) for both queries and updates
+/**
+ * Nombre: Indexed Set casero (Treap ordenado)
+ * Descripcion: Treap que mantiene las claves ordenadas y sirve de indexed_set
+ *   sin PBDS: cuenta cuantos elementos son menores a un valor y devuelve el
+ *   k-esimo. Cada nodo guarda ademas min y suma del subarbol.
+ * Tiempo: O(log n) esperado por operacion
+ * Uso: pitem t = NULL; insert(t,x); erase(t,x);
+ *   treap_lower_bound(t,x); find_by_order(t,k); // k-esimo, 1-indexed
+ */
 typedef struct item *pitem;
 
 struct item {

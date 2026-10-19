@@ -1,3 +1,11 @@
+/**
+ * Nombre: Link-Cut Tree
+ * Descripcion: Link-Cut Tree con splay trees que mantiene un bosque dinamico
+ *   soportando link, cut, make (make root) y split, con tamanos de subarbol
+ *   (siz/siz2). Nodos 1-indexados sobre arreglos globales.
+ * Tiempo: O(log n) amortizado por operacion
+ * Uso: link(x,y); cut(x,y); split(x,y); make(x);
+ */
 const int MAXN = 5e5+5;
 int ls[MAXN],rs[MAXN],fa[MAXN],siz[MAXN],st[MAXN],ch[MAXN][2],siz2[MAXN];
 bool rev[MAXN];

@@ -1,7 +1,11 @@
-// Berlekamp-Massey algorithm
-// Description: Finds the shortest linear recurrence relation that generates a given sequence. 
-// Time: O(N^2)
-// Output: A vector of integers, where the first element is the constant term and the last element is the coefficient of x^(n-1).
+/**
+ * Nombre: Berlekamp-Massey
+ * Descripcion: Encuentra la recurrencia lineal mas corta que genera una secuencia dada.
+ *   Devuelve los coeficientes de la recurrencia (se combina con Linear Recurrence para
+ *   calcular el k-esimo termino).
+ * Tiempo: O(N^2)
+ * Uso: vi trans = BM(x); // x = primeros terminos de la secuencia
+ */
 
 vi BM(vi x){
     vi ls,cur; ll lf,ld;

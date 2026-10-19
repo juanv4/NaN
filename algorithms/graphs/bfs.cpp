@@ -1,3 +1,10 @@
+/**
+ * Nombre: BFS
+ * Descripcion: Recorrido en anchura desde start; calcula la distancia en aristas
+ *   (grafo no pesado) hasta cada nodo. ans[i].d = INF si i no es alcanzable.
+ * Tiempo: O(V+E)
+ * Uso: auto ans = BFS(start, n, g); // ans[i].d = distancia
+ */
 const int MAXN = 200005;
 typedef long long tipo;
 tipo INF = (tipo)(1e18+7);

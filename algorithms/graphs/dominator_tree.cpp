@@ -1,8 +1,10 @@
-// Dominator Tree
-// Description: Given a directed graph, find the dominator tree of the graph
-// Time: O(nlogn)
-// Usage: Dominator_Tree dt(n,g,root); // n --> number of nodes, g --> graph, root --> root of the tree
-// If u is an ancestor of v in the dominator tree, then u dominates v
+/**
+ * Nombre: Dominator Tree
+ * Descripcion: Dado un grafo dirigido y una raiz, construye el arbol de dominadores.
+ *   Si u es ancestro de v en el arbol, entonces u domina a v (todo camino raiz->v pasa por u).
+ * Tiempo: O(m log n)
+ * Uso: Dominator_Tree dt(n, g, root); // n = nodos, g = grafo, root = raiz
+ */
 
 
 #define rz(n) resize(n)

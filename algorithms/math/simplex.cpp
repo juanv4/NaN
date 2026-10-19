@@ -1,3 +1,12 @@
+/**
+ * Nombre: Simplex (programacion lineal)
+ * Descripcion: Maximiza c^T x sujeto a A x <= b, x >= 0. Devuelve el valor
+ *   optimo y el vector solucion. Asertea si el sistema no tiene solucion o si
+ *   es no acotado. Para minimizar, negar c. Requiere EPS definido.
+ * Tiempo: exponencial en el peor caso, en la practica ~O(n m) pivoteos
+ * Uso: Simplex s; s.add_equation(fila, val); s.set_objective(c);
+ *   auto [z, x] = s.simplex();
+ */
 struct Simplex {
     vector<int> X,Y;
     vector<vector<double>> A;

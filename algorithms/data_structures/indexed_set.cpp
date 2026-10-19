@@ -1,3 +1,12 @@
+/**
+ * Nombre: Indexed Set (pbds, order statistics tree)
+ * Descripcion: Set ordenado de GNU pbds con estadisticas de orden. Ademas de
+ *   las operaciones de un set permite acceder por posicion (find_by_order) y
+ *   saber cuantos elementos son menores a x (order_of_key). Para multiset usar
+ *   less_equal en vez de less (rompe erase por valor).
+ * Tiempo: O(log n) por operacion
+ * Uso: indexed_set s; s.insert(x); *s.find_by_order(k); s.order_of_key(x);
+ */
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 typedef long long ll;

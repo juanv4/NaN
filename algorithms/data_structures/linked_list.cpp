@@ -1,4 +1,11 @@
-// Linked list based on arrays
+/**
+ * Nombre: Linked List circular sobre arrays
+ * Descripcion: Lista doblemente enlazada circular de n posiciones fijas
+ *   representada con dos arrays (l[i] anterior, r[i] siguiente). Permite
+ *   borrar elementos en O(1) manteniendo el orden original de los vecinos.
+ * Tiempo: build O(n), erase O(1)
+ * Uso: linked_list L(n); L.erase(pos); // vecinos: L.l[pos], L.r[pos]
+ */
 struct linked_list {
     ll n;
     vi l, r;

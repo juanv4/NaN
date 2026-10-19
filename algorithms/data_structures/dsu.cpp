@@ -1,5 +1,11 @@
-// DSU struct con path compression y union por size
-// Complejidad: O(ack(n)) por operacion, donde ack(n) es la funcion inversa de Ackermann, casi O(1)
+/**
+ * Nombre: DSU (Union-Find)
+ * Descripcion: Conjuntos disjuntos con path compression y union por size.
+ *   Permite unir componentes y preguntar si dos elementos estan en la misma.
+ *   sz[find(x)] es el tamano de la componente de x.
+ * Tiempo: O(alpha(n)) amortizado por operacion (inversa de Ackermann, ~O(1))
+ * Uso: DSU d(n); d.join(a,b); d.same(a,b); d.find(a);
+ */
 struct DSU {
     vi link, sz;
 

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Hashing dinamico (con BIT)
+ * Descripcion: Hash de string con doble mod que soporta updates puntuales de un
+ *   caracter (usa un BIT para las sumas). get/getr dan el hash de un rango en el
+ *   string original y en el reverso (util para chequear palindromos con updates).
+ * Tiempo: build O(n log n), get/update O(log n)
+ * Uso: Hashing h(s); h.get(l,r); h.getr(l,r); h.update(pos,c);
+ */
 ll be(ll x, ll y, ll m) {
     if (y == 0) return 1;
     ll p = be(x, y/2, m) % m;

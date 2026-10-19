@@ -1,6 +1,9 @@
-/* Encuentra un matching en un grafo no bipartito
- * en O(nm) mediante el algoritmo de Edmond's blossom
- * Los matchings estan en (i, mate[i]), con i < mate[i]
+/**
+ * Nombre: Blossom (matching en grafo general)
+ * Descripcion: Matching maximo en grafo NO bipartito mediante el algoritmo de Edmonds
+ *   (blossom). Los emparejamientos quedan en (i, mate[i]).
+ * Tiempo: O(V * E)
+ * Uso: vi mate = Blossom(g); // mate[i] = pareja de i, o -1
  */
 vi Blossom(vector<vi> &g) {
   int n = SZ(g), timer = -1;

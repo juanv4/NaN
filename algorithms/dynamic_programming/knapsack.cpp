@@ -1,3 +1,10 @@
+/**
+ * Nombre: Knapsack 0/1
+ * Descripcion: Problema de la mochila 0/1: maximiza el valor total sin superar la capacidad w,
+ *   usando cada item a lo sumo una vez. DP clasico sobre la capacidad.
+ * Tiempo: O(n * w)
+ * Uso: ll best = knapsack(v, n, w); // v = vector<item>{w, v}
+ */
 //~ Problema de la mochila - O(n*w)
 
 struct item { int w, v; };

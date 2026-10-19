@@ -1,10 +1,12 @@
 const ll LOG = 60;
-// Linear Recurrence
-// Description: Calculates the kth term of a linear recurrence relation
-// init O(n^2log) query(n^2 logk)
-// input: terms: first n term; trans: transition function (calcular con BM); MOD; LOG=mxlog of k
-// output calc(k): kth term mod MOD
-// example: {1,1} {2,1} an=2*a_(n-1)+a_(n-2); calc(3)=3 calc(10007)=71480733
+/**
+ * Nombre: Linear Recurrence (k-esimo termino)
+ * Descripcion: Calcula el k-esimo termino de una recurrencia lineal. terms = primeros n
+ *   terminos; trans = coeficientes de transicion (se obtienen con Berlekamp-Massey). LOG =
+ *   maximo log de k. Ej: terms={1,1}, trans={2,1} => a_n=2*a_(n-1)+a_(n-2); calc(3)=3.
+ * Tiempo: init O(n^2 log n), query O(n^2 log k)
+ * Uso: LinearRec lr(terms, trans); ll x = lr.calc(k);
+ */
 struct LinearRec {
     ll n; vi terms, trans; vector<vi> bin;
     vi add(vi &a, vi &b){

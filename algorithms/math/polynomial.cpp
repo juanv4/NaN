@@ -1,3 +1,14 @@
+/**
+ * Nombre: Polinomios (suma, producto, raices, division)
+ * Descripcion: Struct de polinomios multivariable (poly<poly<>> = 2
+ *   variables) con +, -, * y evaluacion por Horner. roots() busca raices
+ *   racionales (solo coeficientes enteros) por el teorema de la raiz
+ *   racional, ruffini() divide por (x-r), y polydiv()/interpolate() son solo
+ *   para polinomios de double.
+ * Tiempo: producto O(n*m), evaluar O(n), roots O(d(a0) d(an) n),
+ *   ruffini O(n), interpolate O(n^2)
+ * Uso: poly<> p = {4,-1,2}; p(x); roots(p); ruffini(p,r); polydiv(p,q);
+ */
 typedef int tp; // type of polynomial
 template<class T=tp>
 struct poly {  // poly<> : 1 variable, poly<poly<>>: 2 variables, etc.

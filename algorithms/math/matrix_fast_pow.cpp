@@ -1,3 +1,11 @@
+/**
+ * Nombre: Exponenciacion de matrices
+ * Descripcion: Producto de matrices modulo MOD y potencia por binary
+ *   exponentiation. Sirve para resolver recurrencias lineales (Fibonacci,
+ *   contar caminos de largo k en un grafo, etc.). Requiere MOD definido.
+ * Tiempo: O(n^3 log e)
+ * Uso: Matrix r = be(m, e); // m^e ; ones(n) = identidad n x n
+ */
 typedef vector<vector<ll>> Matrix;
 
 Matrix ones(int n) {

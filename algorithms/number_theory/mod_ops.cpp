@@ -1,3 +1,10 @@
+/**
+ * Nombre: Operaciones modulares (MOD global)
+ * Descripcion: Helpers add/sub/mul/divi y exponenciacion be() bajo un MOD global
+ *   (mantienen el resultado en [0,MOD)). divi usa inverso por Fermat (MOD primo).
+ * Tiempo: O(1) add/sub/mul, O(log) be/divi
+ * Uso: add(a,b); mul(a,b); be(a,p); divi(a,b); // definir MOD
+ */
 ll mod(ll x) {x%=MOD; if(x<0) x+=MOD; return x;}
 ll add(ll a, ll b){return mod(a+b);}
 ll sub(ll a, ll b){return mod(a-b);}

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Hashing de strings (doble mod)
+ * Descripcion: Hash polinomial con dos modulos combinados en un solo ll para
+ *   comparar substrings en O(1). get(s,e) devuelve el hash del rango [s,e]
+ *   (0-indexado). Precalcula potencias y sus inversas.
+ * Tiempo: build O(n), get O(1)
+ * Uso: Hash h(s); ll x = h.get(l, r);
+ */
 struct Hash {
     const ll P=1777771;
     const ll MOD[2] = {999727999, 1070777777};

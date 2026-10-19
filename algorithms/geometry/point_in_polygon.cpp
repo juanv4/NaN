@@ -1,3 +1,11 @@
+/**
+ * Nombre: Punto en poligono
+ * Descripcion: point_in_poly hace el test general por ray casting (poligono
+ *   cualquiera); point_in_poly_convex lo resuelve para poligonos convexos con
+ *   busqueda binaria angular. Devuelven true si p esta dentro.
+ * Tiempo: O(n) general, O(log n) convexo
+ * Uso: point_in_poly(v, p); point_in_poly_convex(v, p);
+ */
 bool point_in_poly(vector <punto> &v, punto p) { // O(n) for convex
     unsigned i, j, mi, mj, c = 0;
     for(i = 0, j = v.size()-1; i < v.size(); j = i++) {

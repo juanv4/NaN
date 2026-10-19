@@ -1,6 +1,9 @@
-/* Algoritmo O(n^3) para assignment problem
- * Inspirando el el notebook vasito, quien se inspiro
- * en http://e-maxx.ru/algo/assignment_hungary
+/**
+ * Nombre: Hungarian (Assignment Problem)
+ * Descripcion: Resuelve el problema de asignacion de costo minimo sobre una matriz de
+ *   costos (para maximo, poner INF=0 y negar los costos). Basado en e-maxx.
+ * Tiempo: O(n^3)
+ * Uso: Hungarian h(N,M); h.set(x,y,c); td costo = h.assign(); // L[i]=col asignada a i
  */
 typedef long double td; typedef vector<td> vd;
 const td INF=1e100;//for maximum set INF to 0, and negate costs

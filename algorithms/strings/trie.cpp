@@ -1,3 +1,11 @@
+/**
+ * Nombre: Trie
+ * Descripcion: Arbol de prefijos para strings en minusculas (K=26). add_string
+ *   inserta una palabra (leaf cuenta cuantas terminan ahi) y find chequea si una
+ *   palabra fue insertada.
+ * Tiempo: O(|s|) por operacion
+ * Uso: add_string(s); find(pal);
+ */
 const int K = 26;
 
 struct Vertex {

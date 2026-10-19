@@ -1,5 +1,13 @@
+/**
+ * Nombre: Aho-Corasick
+ * Descripcion: Automata de Aho-Corasick para buscar varios patrones a la vez.
+ *   add_string agrega cada patron al trie; construct_links arma los suffix links;
+ *   go(v,c) da la transicion. Usa el trie global t y el arbol de suffix-links g.
+ * Tiempo: build O(sum|patrones| * log SIGMA), match O(|texto| * log SIGMA)
+ * Uso: aho_init(); add_string(s,id); construct_links(); v = go(v,c);
+ */
 struct vertex {
-    map<char,int> next, go; 
+    map<char,int> next, go;
     int p,link,nextleaf;
     char pch;
     vector<int> leaf;

@@ -1,3 +1,11 @@
+/**
+ * Nombre: NTT (Number Theoretic Transform)
+ * Descripcion: Multiplica polinomios modulo 998244353 usando raices de la
+ *   unidad en Zp, sin errores de precision (a diferencia de FFT). Los
+ *   coeficientes deben estar reducidos modulo mod. Necesita inv_mod.
+ * Tiempo: O(n log n)
+ * Uso: ntt f; vector<int> c = f.multiply(a, b);
+ */
 struct ntt {
     const int mod = 998244353;
     const int root = 15311432;

@@ -1,6 +1,11 @@
-// Convex Hull Trick
-// O(log n) para agregar linea y consultar
-// Las linease agregan en orden creciente de pendiente
+/**
+ * Nombre: Convex Hull Trick (estatico)
+ * Descripcion: Mantiene un conjunto de rectas para consultar el minimo (o maximo) en un x.
+ *   Las lineas deben agregarse en orden creciente de pendiente. Sirve para optimizar DP del
+ *   tipo dp[i] = min(m_j * x_i + b_j).
+ * Tiempo: O(1) amortizado por insercion, O(log n) por query
+ * Uso: chull c(maxi); c.add_line(m, b); ll y = c.get(x);
+ */
 typedef long long tipo;
 typedef __int128 ull;
 

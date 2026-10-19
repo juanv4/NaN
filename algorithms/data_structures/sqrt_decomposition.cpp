@@ -1,4 +1,12 @@
-// This code solves the same problem as lazy arithmetic sum
+/**
+ * Nombre: Sqrt Decomposition (suma con update aritmetico)
+ * Descripcion: Divide el array en bloques de tamano BSIZE. Resuelve lo mismo
+ *   que el lazy de suma aritmetica: sumar en [l,r] la progresion
+ *   a, a+b, a+2b, ... y pedir la suma del rango. Cada bloque guarda el lazy
+ *   (a,b) y su suma; refresh_block lo aplica al vector.
+ * Tiempo: build O(n), query/update O(sqrt(n))
+ * Uso: segment_block sb; sb.build(v,n); sb.update(l,r,a,b); sb.query(l,r);
+ */
 
 struct block {
 	ll l, r, a, b, ans;

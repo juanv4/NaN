@@ -1,5 +1,11 @@
-// Algoritmo de euclides extendido para encontrar gcd de a y b.
-// En x e y se guarda una solucion particular de la ecuacion ax+by=gcd(a,b)
+/**
+ * Nombre: Ecuacion Diofantica (Euclides extendido)
+ * Descripcion: Euclides extendido: calcula gcd(a,b) y una solucion particular (x,y) de
+ *   a*x + b*y = gcd(a,b). find_any_solution resuelve a*x + b*y = c (tiene solucion sii
+ *   gcd(a,b) | c). El resto de soluciones se obtiene desplazando por b/g y a/g.
+ * Tiempo: O(log min(a,b))
+ * Uso: ll g = gcd(a,b,x,y);  o  find_any_solution(a,b,c,x0,y0,g);
+ */
 ll gcd(ll a, ll b, ll &x, ll &y) {
     if (b == 0) {
         x = 1; y = 0;

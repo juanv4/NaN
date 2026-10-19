@@ -1,6 +1,11 @@
-//~ Li Chao Tree
-//~ Permite resolver CHT dinamico
-//~ Desventaja: si evaluamos x > 10^6, no aguanta el segment tree
+/**
+ * Nombre: Li Chao Tree
+ * Descripcion: Convex Hull Trick dinamico que admite rectas en cualquier orden. Guarda las
+ *   rectas en un segment tree sobre el dominio de x y consulta el minimo en un punto. Limitacion:
+ *   el dominio de x esta acotado (por defecto hasta 1e6).
+ * Tiempo: O(log N) por insercion y por query
+ * Uso: insert({m, b}); ll y = query(x);
+ */
 
 const int N = int(1e6 + 1);
 const ll INF = ll(1e18+10);

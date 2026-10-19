@@ -1,3 +1,11 @@
+/**
+ * Nombre: Diametro de un arbol
+ * Descripcion: Diametro (mayor cantidad de aristas entre dos nodos) con dos DFS:
+ *   desde cualquier nodo se llega al extremo mas lejano, y desde ahi al otro
+ *   extremo. Usa el grafo global g.
+ * Tiempo: O(n)
+ * Uso: int d = find_diameter(); // usa g global
+ */
 vector < vector <int> > g(MAXN);
 vector <bool> visto(MAXN,false);
 

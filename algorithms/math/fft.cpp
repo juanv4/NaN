@@ -1,4 +1,11 @@
-
+/**
+ * Nombre: FFT (multiplicacion de polinomios)
+ * Descripcion: Transformada rapida de Fourier iterativa para multiplicar dos
+ *   polinomios (o enteros grandes). multiply devuelve los coeficientes del
+ *   producto. Usa long double para ganar precision con coeficientes grandes.
+ * Tiempo: O(n log n)
+ * Uso: vector<tipo> c = multiply(p1, p2);
+ */
 typedef long long tipo;
 typedef long double ld; 
 

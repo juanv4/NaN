@@ -1,3 +1,10 @@
+/**
+ * Nombre: Raiz Discreta (discrete root)
+ * Descripcion: Encuentra todos los x tales que x^k = a (mod n), usando una raiz primitiva
+ *   modulo n y baby-step giant-step. Incluye generator(p) para la raiz primitiva.
+ * Tiempo: O(sqrt(n) log n)
+ * Uso: vi xs = discrete_root(n, k, a); // todas las soluciones
+ */
 // Finds the primitive root modulo p
 ll generator(ll p) {
     vi fact;

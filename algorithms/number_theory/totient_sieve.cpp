@@ -1,3 +1,11 @@
+/**
+ * Nombre: Criba lineal de phi de Euler
+ * Descripcion: Criba lineal que calcula la funcion totient de Euler phi[i] para
+ *   todo i < n, ademas de la lista de primos. phi[i] = cantidad de enteros en
+ *   [1,i] coprimos con i.
+ * Tiempo: O(n)
+ * Uso: sieve(n); // llena phi[] y prime
+ */
 bool is_composite[1000];
 int phi[1000];
 vector<long long> prime;

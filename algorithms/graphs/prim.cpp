@@ -1,15 +1,11 @@
-//Prim Algorithm
-
-//Dado un grado no direccionado, halla el arbol tal que la suma de
-//los pesos de las aristas sea minimo
-
-//Metodologia: insertamos un nodo cualquiera, agregamos en un priority
-//queue las aristas, ordenadas desde el menor peso hasta el mayor.
-//insertamos la menor arista y agregamos el otro extremo como un nodo
-//nuevo. Iteramos estos pasos hasta obtener las n-1 aristas.
-
-//El algoritmo retorna la lista con las arista que generan el minimum
-//Spanning Tree
+/**
+ * Nombre: Prim (MST)
+ * Descripcion: Arbol de expansion minima en grafo no dirigido. Parte de un nodo y va
+ *   agregando la arista de menor peso hacia un nodo nuevo (via set/priority queue)
+ *   hasta tener n-1 aristas. Adyacencias en el global v[]. Devuelve las aristas del MST.
+ * Tiempo: O(E log E)
+ * Uso: Prim(start); // v[u] = {(vecino, peso)}; devuelve vector<pair> de aristas
+ */
 
 vector <pair<ll,ll>> v[500005];
 vector <pair<ll,ll>> a;

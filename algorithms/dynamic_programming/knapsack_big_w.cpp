@@ -1,6 +1,11 @@
-// Description: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
-// Time: O(n * MAXV)
-// Usage: knapsack(v,n,w); // v --> vector of items, n --> number of items, w --> maximum weight
+/**
+ * Nombre: Knapsack con peso grande (DP por valor)
+ * Descripcion: Mochila 0/1 cuando la capacidad w es enorme pero los valores son chicos. En
+ *   vez de indexar por peso, la DP indexa por valor total (dp[v] = minimo peso para lograr valor v)
+ *   y devuelve el mayor valor con peso <= w.
+ * Tiempo: O(n * MAXV), con MAXV = suma maxima de valores
+ * Uso: ll best = knapsack(v, n, w); // v = vector<item>{w, v}
+ */
 
 struct item { int w, v; };
 

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Template de punto / vector 2D
+ * Descripcion: Struct punto con los operadores basicos: suma, resta, producto
+ *   punto (*), producto cruz (^), comparaciones, arg(), mod(). Cambiar tipo a
+ *   long long para trabajar con enteros. Incluye una struct frac para exacto.
+ * Tiempo: O(1) cada operacion
+ * Uso: punto a{x,y}; a^b (cruz); a*b (dot); a.mod(); k*a;
+ */
 typedef long double tipo; //Cambiar a long long para operar en enteros
 double EPS = (double)(1e-10);
 

@@ -1,5 +1,11 @@
-// Devuelve la distancia entre los puntos mas lejanos en O(N)
-// Cuando se usa con nuestra convex_hull, hacer reverse porque vienen CW
+/**
+ * Nombre: Rotating Calipers (diametro)
+ * Descripcion: Devuelve la distancia entre los dos puntos mas lejanos (diametro) de un
+ *   poligono convexo. Prerequisito: convexo, en CCW y SIN puntos colineales (con nuestra
+ *   convex_hull hacer reverse porque vienen CW).
+ * Tiempo: O(N)
+ * Uso: ld d = callipers(p, n); // p = poligono convexo CCW
+ */
 ld callipers(vector<punto> p, int n){ 
     ld r=0;     // prereq: Convex, ccw, NO COLLINEAR POINTS
     for(int i=0,j=n<2?0:1;i<j;++i){

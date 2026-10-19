@@ -1,4 +1,12 @@
-struct st2d{ // 0 indexado, [l, r] 
+/**
+ * Nombre: Segment Tree 2D (iterativo)
+ * Descripcion: Segtree iterativo en 2 dimensiones para update puntual y query
+ *   sobre submatriz [x0,x1]x[y0,y1] (0-indexado). Cambiar op() y NEUT para otra
+ *   operacion. El build se arma haciendo los n*n updates.
+ * Tiempo: build O(n^2), update/query O(log^2 n)
+ * Uso: st2d st(n); st.upd(x,y,v); st.query(x0,x1,y0,y1);
+ */
+struct st2d{ // 0 indexado, [l, r]
 	// PARA HACER BUILD HAY QUE HACER LOS N*N updates
 	int n;
 	vector<vi> st;

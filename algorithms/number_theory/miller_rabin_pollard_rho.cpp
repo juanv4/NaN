@@ -1,3 +1,12 @@
+/**
+ * Nombre: Factorizacion rapida (Miller-Rabin + Pollard's rho)
+ * Descripcion: miller() testea primalidad de forma determinista para cualquier
+ *   ll (bases primas hasta 37); pollard() halla un factor no trivial;
+ *   factorize() devuelve la factorizacion completa (con repeticion, ordenada).
+ *   Sirve hasta ~10^18.
+ * Tiempo: factorize ~O(n^(1/4) polylog)
+ * Uso: Factorization F; vi f = F.factorize(n); F.miller(n);
+ */
 mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
 ll myrand(ll a, ll b) { return uniform_int_distribution<ll>(a, b)(rng); }
 

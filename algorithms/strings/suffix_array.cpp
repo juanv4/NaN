@@ -1,3 +1,11 @@
+/**
+ * Nombre: Suffix Array (+ LCP y aplicaciones)
+ * Descripcion: Construye el suffix array por doubling con counting sort (agrega
+ *   '$'). Incluye construccion del LCP, busqueda de substring, conteo de
+ *   substrings distintas y longest common substring entre dos strings.
+ * Tiempo: build O(n log n), LCP O(n)
+ * Uso: auto sa = suffix_array(s); auto lcp = lcp_construction(s, sa);
+ */
 #define RB(x) (x<n?r[x]:0)
 void csort(vector<int>& sa, vector<int>& r, int k){
     int n=sa.size();

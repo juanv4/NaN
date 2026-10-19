@@ -1,4 +1,11 @@
-// Catalan dp
+/**
+ * Nombre: Numeros de Catalan
+ * Descripcion: Calcula los numeros de Catalan. Version DP con la recurrencia
+ *   C[i]=sum C[j]*C[i-j-1], y version por formula binom(2n,n)/(n+1) con factoriales
+ *   e inversos precomputados (fact, ifact).
+ * Tiempo: DP O(n^2); formula O(1) tras precomputar factoriales
+ * Uso: auto c = catalan(n); // vector DP  |  ll x = catalan(n); // formula mod
+ */
 
 vector<ll> catalan(int n) { //O(N^2)
     vector<ll> c(n+1,0); c[0] = c[1] = 1;

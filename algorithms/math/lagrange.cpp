@@ -1,7 +1,14 @@
+/**
+ * Nombre: Interpolacion de Lagrange
+ * Descripcion: Dados n puntos (xi,yi) de un polinomio de grado < n, evalua
+ *   ese polinomio en un x cualquiera sin calcular sus coeficientes. Util para
+ *   sumas de potencias y recurrencias polinomiales (con n = grado+1 puntos).
+ *   Ojo con la division entera / el overflow: si se trabaja modulo p usar
+ *   inverso modular.
+ * Tiempo: O(n^2)
+ * Uso: ll y = lagrange(a, x); // a = {(x0,y0), ..., (xn-1,yn-1)}
+ */
 ll lagrange(vii a, ll x){
-	/* Recibe una muestra a de n puntos (xi,yi)
-	   y evalua el polinomio de Lagrange de 
-	   en el punto x desconocido */
 
 	ll ans = 0;
 	int n = SZ(a);

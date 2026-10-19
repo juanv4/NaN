@@ -1,11 +1,10 @@
 /**
- * Fast bipartite matching algorithm. Graph $g$ should be a list
- * of neighbors of the left partition, and $btoa$ should be a vector full of
- * -1's of the same size as the right partition. Returns the size of
- * the matching. $btoa[i]$ will be the match for vertex $i$ on the right side,
- * or $-1$ if it's not matched.
- * Usage: vi btoa(m, -1); hopcroftKarp(g, btoa);
- * Time: O(\sqrt{V}E)
+ * Nombre: Hopcroft-Karp (matching bipartito)
+ * Descripcion: Matching maximo bipartito rapido. g es la lista de vecinos de la particion
+ *   izquierda; btoa se pasa lleno de -1 con tamano de la particion derecha. Devuelve el
+ *   tamano del matching y deja en btoa[i] la pareja del nodo i de la derecha (-1 si no).
+ * Tiempo: O(sqrt(V) * E)
+ * Uso: vi btoa(m, -1); int m = hopcroftKarp(g, btoa);
  */
 bool dfs(int a, int L, vector<vi> &g, vi &btoa, vi &A, vi &B) {
     if(A[a] != L) return 0;

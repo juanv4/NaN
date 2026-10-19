@@ -1,3 +1,11 @@
+/**
+ * Nombre: Centroide de un arbol
+ * Descripcion: Encuentra el centroide (nodo tal que cada subarbol tiene <= n/2
+ *   nodos); puede haber 1 o 2. Devuelve la lista de centroides. Usa el grafo
+ *   global g (nodos 1..n).
+ * Tiempo: O(n)
+ * Uso: vector<int> c = find_centroid(n); // usa g global
+ */
 vector < vector <int> > g(MAXN);
 vector <bool> is_centroid(MAXN,true);
 vector <int> sz(MAXN,0);

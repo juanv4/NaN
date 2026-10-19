@@ -1,5 +1,11 @@
-// Compresion de coordenadas
-// Complejidad: O(n log n) para construir, O(log n) para obtener
+/**
+ * Nombre: Compresion de coordenadas
+ * Descripcion: Mapea los valores de un vector al rango [0,k) manteniendo el
+ *   orden relativo y eliminando duplicados. Sirve para indexar estructuras
+ *   por valores muy grandes o dispersos.
+ * Tiempo: build O(n log n), obtener O(log n)
+ * Uso: compresion c(v); int id = c.obtener(x); // c.todos[id] == x
+ */
 struct compresion {
     vector<int> todos;
     compresion(vector<int> v) {

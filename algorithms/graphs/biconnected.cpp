@@ -1,3 +1,11 @@
+/**
+ * Nombre: Componentes biconexas + Block-Cut Tree
+ * Descripcion: DFS estilo Tarjan que calcula las componentes biconexas (comps),
+ *   los puntos de articulacion (art) y los puentes (bridge). build_tree arma el
+ *   block-cut tree del grafo. Incluye una struct graph auxiliar.
+ * Tiempo: O(V+E)
+ * Uso: graph g(n); g.add_edge(u,v); BCC bcc(g); auto [id,tree] = bcc.build_tree();
+ */
 struct edge{ ll u, v, id; };
 
 struct graph{

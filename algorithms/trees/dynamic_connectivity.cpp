@@ -1,3 +1,11 @@
+/**
+ * Nombre: Dynamic Connectivity offline
+ * Descripcion: Conectividad dinamica offline (add/remove de aristas mas queries)
+ *   con divide & conquer sobre el tiempo y DSU con rollback. Completar el bloque
+ *   de QUERY con la operacion deseada entre q[s].x y q[s].y.
+ * Tiempo: O((n + q) log q * alpha)
+ * Uso: DynCon dc(n); dc.add(x,y); dc.remove(x,y); dc.query(x,y); dc.process();
+ */
 struct UnionFind {
     int n,comp;
     vi uf,si,c;

@@ -1,6 +1,11 @@
-// Teorema chino del resto
-// Resuelve el sistema de ecuaciones modulares
-// ai*xi = bi (mi)
+/**
+ * Nombre: Teorema Chino del Resto (CRT)
+ * Descripcion: Resuelve un sistema de ecuaciones modulares ai*xi = bi (mi), incluso con
+ *   modulos no coprimos. Devuelve (solucion, lcm) o (-1,-1) si es incompatible. Cuidado con
+ *   el overflow: usar __int128 si el lcm no entra en ll.
+ * Tiempo: O(k log m), con k = cantidad de ecuaciones
+ * Uso: auto [x, l] = crt(cond); // cond[i] = {ai, bi, mi}
+ */
 ii extendedEuclid(ll a, ll b){ //a * x + b * y = gcd(a,b)
     ll x,y;
     if (b==0) return {1, 0};

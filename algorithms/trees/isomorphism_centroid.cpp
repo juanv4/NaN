@@ -1,3 +1,11 @@
+/**
+ * Nombre: Isomorfismo de arboles (por centroide)
+ * Descripcion: Chequea si dos arboles son isomorfos: encuentra sus centroides y
+ *   compara los hashes canonicos (un dfs codifica cada subarbol por el multi-
+ *   conjunto ordenado de sus hijos). Incluye la struct centroid auxiliar.
+ * Tiempo: O(n log n)
+ * Uso: iso I(t1,t2); I.check_iso(centroides1, centroides2);
+ */
 struct centroid {
     vector < vector <int> > g;
     vector <bool> is_centroid;

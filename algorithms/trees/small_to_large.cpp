@@ -1,4 +1,12 @@
-// Small to large techique. 
+/**
+ * Nombre: Small to Large (merging en arboles)
+ * Descripcion: Responde queries offline sobre subarboles mergeando siempre
+ *   la estructura chica dentro de la grande, asi cada elemento se mueve a lo
+ *   sumo log n veces. Aca cnt[v] cuenta colores del subarbol y contesta
+ *   "cuantos colores distintos" (o "cuantos nodos de color c").
+ * Tiempo: O(n log n) (O(n log^2 n) si la estructura es un map ordenado)
+ * Uso: cargar g, color y q[v]; solve(m); // respuestas en ans
+ */
 struct query { // Queries to answer, v: vertex, c: color, idx: ans pos
     ll v, c, idx; 
 };

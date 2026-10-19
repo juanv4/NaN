@@ -1,5 +1,10 @@
-// Description: Bellman-Ford algorithm for finding the shortest path from a source to all other nodes in a graph. It can also detect negative cycles.
-// Time: O(VE)
+/**
+ * Nombre: Bellman-Ford
+ * Descripcion: Camino minimo desde una fuente a todos los nodos, admite pesos negativos.
+ *   Tambien detecta ciclos negativos. ans[i].d = distancia, ans[i].p = predecesor.
+ * Tiempo: O(V * E)
+ * Uso: bFord(lista, n, start); // lista = vector<arista>; luego ans[i].d, ans[i].p
+ */
 
 typedef long long tipo;
 const int MAXN = 3000;

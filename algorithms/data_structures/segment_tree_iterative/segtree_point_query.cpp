@@ -1,3 +1,11 @@
+/**
+ * Nombre: Segment Tree iterativo (range update, point query)
+ * Descripcion: Segtree iterativo con update de rango [l,r] (acumula op sobre el
+ *   rango) y query puntual (combina la rama hasta la hoja p). Cambiar op() y
+ *   NEUT para otra operacion.
+ * Tiempo: build O(n), modify/query O(log n)
+ * Uso: segtree st; st.build(v,n); st.modify(l,r,val); st.query(p);
+ */
 typedef ll tipo;
 struct segtree {
   vector<tipo> t; int tam;

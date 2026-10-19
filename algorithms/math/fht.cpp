@@ -1,3 +1,11 @@
+/**
+ * Nombre: FHT / Walsh-Hadamard (convolucion XOR/AND/OR)
+ * Descripcion: Transformada de Hadamard rapida para convoluciones sobre
+ *   subconjuntos: como multiplicar polinomios pero XOR-eando los exponentes
+ *   (descomentar las lineas para AND u OR). MAXN debe ser potencia de 2.
+ * Tiempo: O(n log n)
+ * Uso: vi c = multiply(p1, p2);
+ */
 ll c1[MAXN+9],c2[MAXN+9];  // MAXN must be power of 2 !!
 void fht(ll* p, int n, bool inv){
     for(int l=1;2*l<=n;l*=2)for(int i=0;i<n;i+=2*l)forn(j,l){

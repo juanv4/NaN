@@ -1,5 +1,13 @@
+/**
+ * Nombre: Segment Tree recursivo (Sum Range Query)
+ * Descripcion: Segtree recursivo por nodos para update puntual y query de rango
+ *   [l,r]. Cambiar op()/NEUT para otras operaciones. Al final se incluye el
+ *   node y op() de la variante Maximum Subarray Sum.
+ * Tiempo: build O(n), update/query O(log n)
+ * Uso: segtree st; st.build(v,n); st.update(pos,val); st.query(l,r).ans;
+ */
 typedef long long tipo;
-const tipo NEUT = 0; // REMINDER !!! 
+const tipo NEUT = 0; // REMINDER !!!
 
 struct node {
     int l, r; tipo ans;

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Divisores de n (a partir de sus primos)
+ * Descripcion: Factoriza n usando una lista de primos precomputada y genera
+ *   todos sus divisores multiplicando las potencias de cada primo. Devuelve los
+ *   divisores ordenados.
+ * Tiempo: O(|primos| + d(n)), con d(n) = cantidad de divisores
+ * Uso: vi divs = find_divisors(n, primos);
+ */
 vi find_divisors(ll n, vi &primos) {
 	vector <pair<ll,ll>> factor; 
 	for(ll prime : primos) {

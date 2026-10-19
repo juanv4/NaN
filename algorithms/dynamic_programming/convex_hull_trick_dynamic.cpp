@@ -1,6 +1,10 @@
-// Convex Hull trick dinamico.
-// O(log n) para agregar e consultar.
-// Para minimo, cambiar el signo de m y b.
+/**
+ * Nombre: Convex Hull Trick Dinamico (LineContainer)
+ * Descripcion: Mantiene rectas con un multiset para consultar el maximo en un x, admitiendo
+ *   inserciones en cualquier orden de pendiente. Para minimo, insertar con el signo de m y b cambiado.
+ * Tiempo: O(log n) por insercion y por consulta
+ * Uso: HullDynamic h; h.add(m, b); tc y = h.eval(x);
+ */
 typedef ll tc;
 const tc is_query=-(1LL<<62); // special value for query
 struct Line {

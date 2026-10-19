@@ -1,3 +1,11 @@
+/**
+ * Nombre: Segment Tree persistente (base, suma)
+ * Descripcion: Segtree persistente basado en punteros: cada update crea una
+ *   version nueva compartiendo los nodos que no cambian. Las versiones se
+ *   guardan en 'estado'. Base para queries sobre versiones historicas.
+ * Tiempo: build O(n), update/query O(log n); O(log n) memoria por update
+ * Uso: estado.pb(build(a,0,n-1)); estado.pb(update(estado.back(),0,n-1,pos,val)); get_sum(estado[i],0,n-1,l,r);
+ */
 struct Vertex {
     Vertex *l, *r;
     ll sum;

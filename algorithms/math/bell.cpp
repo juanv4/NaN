@@ -1,4 +1,12 @@
-// Los numeros de Bell son utiles para calcular de cuantas maneras 
+/**
+ * Nombre: Numeros de Bell
+ * Descripcion: bell[i] = cantidad de particiones de un conjunto de i elementos. Se calculan
+ *   con el triangulo de Bell: bell[i][0]=bell[i-1][i-1], bell[i][j]=bell[i-1][j-1]+bell[i][j-1].
+ *   Devuelve los numeros de Bell de 0 a n. Serie: 1,1,2,5,15,52,203,...
+ * Tiempo: O(n^2)
+ * Uso: vector<int> b = bellNumber(n); // b[i] = i-esimo numero de Bell
+ */
+// Los numeros de Bell son utiles para calcular de cuantas maneras
 // podemos subdivir el conjunto utilizando todos los elementos
 
 // O(n^2)

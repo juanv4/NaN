@@ -1,6 +1,10 @@
-// Longest Common Subsequence
-// O(n*m) time, O(n*m) space
-// Usage: LCS(s1,s2)
+/**
+ * Nombre: Longest Common Subsequence (LCS)
+ * Descripcion: DP clasico que devuelve la subsecuencia comun mas larga de dos strings,
+ *   reconstruyendola con una tabla de predecesores.
+ * Tiempo: O(n*m) tiempo y memoria
+ * Uso: string s = LCS(s1, s2);
+ */
 
 string LCS(string s1, string s2) { // O(n*m)
     const int n = SZ(s1), SZ(s2);

@@ -1,9 +1,11 @@
-/*
-Convex Hull:
-Complejidad O(N).
-La hull no tiene puntos colineales
-Los devuelve en orden clockwise -> Para rotating calipers hacer reverse
-*/
+/**
+ * Nombre: Convex Hull
+ * Descripcion: Envolvente convexa de un conjunto de puntos (Andrew's monotone chain). La
+ *   hull no incluye puntos colineales y se devuelve en orden clockwise (para rotating
+ *   calipers hacer reverse). Modifica el vector de entrada.
+ * Tiempo: O(N log N)
+ * Uso: convex_hull(a); // a queda con los puntos de la envolvente (CW)
+ */
 
 const ld EPS = 1e-10;
 void convex_hull(vector<punto> &a) {

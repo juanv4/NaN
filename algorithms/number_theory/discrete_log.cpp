@@ -1,6 +1,9 @@
-/* Algoritmo de baby-step giant-step para 
- * hallar x tal que a^x = b (mod m) 
- * en O(sqrt(m))
+/**
+ * Nombre: Logaritmo Discreto (baby-step giant-step)
+ * Descripcion: Halla x tal que a^x = b (mod m) mediante baby-step giant-step.
+ *   Devuelve -1 si no existe solucion.
+ * Tiempo: O(sqrt(m))
+ * Uso: ll x = discrete_log(a, b, m);
  */
 ll discrete_log(ll a, ll b, ll m) {
     a %= m, b %= m;

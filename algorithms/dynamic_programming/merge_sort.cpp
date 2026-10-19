@@ -1,6 +1,10 @@
-// Merge sort con inversiones
-// Complejidad: O(n log n)
-// Usage: merge_sort(0,n-1,v)
+/**
+ * Nombre: Merge Sort (con conteo de inversiones)
+ * Descripcion: Ordena el vector con merge sort y, de paso, cuenta la cantidad de inversiones
+ *   en la variable global inv.
+ * Tiempo: O(n log n)
+ * Uso: auto ord = merge_sort(0, n-1, v); // inv = cantidad de inversiones
+ */
 
 ll inv = 0; // Inversiones
 

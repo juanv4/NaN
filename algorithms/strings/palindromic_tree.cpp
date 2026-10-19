@@ -1,3 +1,11 @@
+/**
+ * Nombre: Palindromic Tree (Eertree)
+ * Descripcion: Arbol de palindromos: agregando los caracteres de a uno mantiene
+ *   todos los subpalindromos distintos de la string, con su longitud, suffix
+ *   link y cantidad de apariciones (cnt). SIGMA = tamano del alfabeto.
+ * Tiempo: O(n) amortizado; O(n * SIGMA) memoria
+ * Uso: palindromic_tree pt; forn(i,n) pt.add(i, s);
+ */
 struct palindromic_tree{
     static const int SIGMA=26;
     struct Node{

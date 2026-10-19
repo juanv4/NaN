@@ -1,3 +1,11 @@
+/**
+ * Nombre: Centroid Decomposition (version funciones)
+ * Descripcion: Descomposicion en centroides con arreglos globales: cdfs marca
+ *   los centroides y deja en fat[x] el padre de cada nodo en la descomposicion.
+ *   Llamar centroid() para armarla.
+ * Tiempo: O(n log n)
+ * Uso: centroid(); // usa g, n globales; resultado en fat[]
+ */
 vector<int> g[MAXN];int n;
 bool tk[MAXN];
 int fat[MAXN]; // father in centroid decomposition

@@ -1,6 +1,10 @@
-// Divide and conquer optimization for DP
-// Complexity: O(nklogn)
-// Usage: solve_dac(n,k); // n --> number of elements, k --> number of groups
+/**
+ * Nombre: Divide and Conquer DP Optimization
+ * Descripcion: Optimiza DPs de la forma dp[k][i] = min_j dp[k-1][j] + costo(j,i) cuando el punto
+ *   optimo opt(i) es monotono. Reparte n elementos en k grupos. Definir costo en calc_costo/costo[][].
+ * Tiempo: O(n k log n)
+ * Uso: ll r = solve_dac(n, k);
+ */
 
 ll costo[MAXN][MAXN];
 

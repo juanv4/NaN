@@ -1,3 +1,11 @@
+/**
+ * Nombre: Kruskal (MST)
+ * Descripcion: Arbol de expansion minima ordenando las aristas por peso y
+ *   uniendolas con DSU si no forman ciclo. Devuelve las aristas del MST.
+ *   Incluye la struct DSU necesaria.
+ * Tiempo: O(E log E)
+ * Uso: auto mst = kruskal(n, g); // g = vector<arista>
+ */
 struct arista {
     int u, v;
     ll w;

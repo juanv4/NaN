@@ -1,12 +1,13 @@
 //~ const int INF = 2; // it doesn't actually have to be infinity or a big number
 
-/*
-Sistema de ecuaciones lineales modulares. Resuelve Ax=B. 
-En las filas estan las ecuaciones y en las columnas las variables.
-En ans queda la solucion en caso de que sea unica. La matriz A es de n x m. 
-Esta matriz tiene n ecuaciones y m-1 variables, la ultima columna es la matrix b.
-Complejidad O(min(n, m)nm). Si n == m, es O(n^3). 
-*/
+/**
+ * Nombre: Gauss (sistema de ecuaciones modular)
+ * Descripcion: Resuelve un sistema lineal modular Ax=B. Filas = ecuaciones, columnas =
+ *   variables; la matriz es n x m con m-1 variables y la ultima columna es b. Deja la
+ *   solucion en ans cuando es unica. Devuelve 0 (sin solucion), 1 (unica) o INF (infinitas).
+ * Tiempo: O(min(n,m) * n * m); si n==m es O(n^3)
+ * Uso: int r = gauss(a, ans); // a = vector<vi> (aumentada), ans = solucion
+ */
 
 ll mod(ll x) {x%=MOD; if(x<0) x+=MOD; return x;}
 ll add(ll a, ll b){return mod(a+b);}

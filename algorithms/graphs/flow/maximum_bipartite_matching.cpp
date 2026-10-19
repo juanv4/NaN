@@ -1,8 +1,10 @@
-/*
-Algoritmo de Kuhn para bipartite matching, se le pasa el grafo
-y encuentra el matching maximo en O(VE).
-La pareja de cada nodo se guarda en match[i], sino -1
-*/
+/**
+ * Nombre: Maximum Bipartite Matching (Kuhn)
+ * Descripcion: Algoritmo de Kuhn para matching maximo en grafo bipartito. Se le pasa
+ *   el grafo (nodos 0..n-1, ambos lados) y la pareja de cada nodo queda en match[i] (-1 si no).
+ * Tiempo: O(V * E)
+ * Uso: bipartite_matching bm(n, g); int aristas = bm.solve(); // /2 = cant. de parejas
+ */
 
 struct bipartite_matching { 
   int n;

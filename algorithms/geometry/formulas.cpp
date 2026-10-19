@@ -1,3 +1,10 @@
+/**
+ * Nombre: Formulas de geometria
+ * Descripcion: Coleccion de utilidades sobre punto/recta: area de poligono (shoelace),
+ *   distancia de un punto a una recta, proyeccion de un vector sobre otro, etc.
+ * Tiempo: area O(n); el resto O(1)
+ * Uso: area(v); dist_point_line(p, r); project(a, b);
+ */
 // Shoelace formula
 tipo area(vector <punto> &v) {
     tipo ans = 0.0; int n = v.size();

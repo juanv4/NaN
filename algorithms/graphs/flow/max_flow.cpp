@@ -1,11 +1,11 @@
-/*
-Algoritmo de Edmonds-Karp, halla el max flow en O(VE^2).
-Para eso, va eligiendo caminos de aumento con la menor cantidad de aristas
-en el grafo residual.
-
-El min_cut esta formado por las aristas que unen un nodo alcanzable por
-s en el grafo residual final, con un nodo inalcanzable.
-*/
+/**
+ * Nombre: Max Flow (Edmonds-Karp)
+ * Descripcion: Flujo maximo eligiendo caminos de aumento con menos aristas (BFS) en el
+ *   grafo residual. El min cut son las aristas que unen un nodo alcanzable desde s en
+ *   el residual final con uno inalcanzable.
+ * Tiempo: O(V * E^2)
+ * Uso: max_flow mf(n); mf.add_edge(x,y,cap); tipo f = mf.get_max_flow(s,t);
+ */
 typedef long long tipo; // el tipo en que se mide el flow
 
 struct max_flow { // Edmonds-Karp, O(VE^2)

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Max Flow Min Cost (SPFA)
+ * Descripcion: Flujo maximo de costo minimo buscando caminos de aumento de costo
+ *   minimo con Bellman-Ford (SPFA). Grafo por mapa cap/cost (no soporta aristas
+ *   multiples entre el mismo par). add_edge(x,y,cap,costo).
+ * Tiempo: ~O(V*E*flujo)
+ * Uso: add_edge(x,y,cap,c); tipo_cost mc = max_flow_min_cost(s,t);
+ */
 typedef long long tipo;
 typedef double tipo_cost;
 const int MAXN = 505;

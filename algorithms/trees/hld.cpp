@@ -1,4 +1,12 @@
-struct hld { 
+/**
+ * Nombre: Heavy-Light Decomposition
+ * Descripcion: HLD sobre un arbol con valores en los nodos, apoyado en un
+ *   segment tree para responder queries de camino (por defecto max) y updates
+ *   puntuales. Cambiar op()/NEUT para otra operacion.
+ * Tiempo: build O(n), query/update O(log^2 n)
+ * Uso: hld h(n, g, values); h.query_hld(a,b); h.update_hld(p,val);
+ */
+struct hld {
 	#define rs(x) resize(x)
 	int n;
 	vector <vector<int>> g;

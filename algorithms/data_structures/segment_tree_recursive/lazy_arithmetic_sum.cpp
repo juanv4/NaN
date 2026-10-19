@@ -1,3 +1,11 @@
+/**
+ * Nombre: Segment Tree Lazy (suma de progresion aritmetica)
+ * Descripcion: Segtree con lazy propagation que suma una progresion aritmetica
+ *   (termino inicial a, diferencia d) sobre un rango [l,r] y consulta la suma
+ *   del rango. Cambiar op()/set_lazy para otras combinaciones.
+ * Tiempo: build O(n), update/query O(log n)
+ * Uso: lazy st; st.build(v,n); st.update(l,r,a,d); st.query(l,r).ans;
+ */
 typedef long long tipo;
 
 struct node {

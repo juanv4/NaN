@@ -1,7 +1,11 @@
-// Imprime la cantidad de componentes conexas
-// Resuelve el problema offline, para agregar una query es necesario 
-// agregar DynCon.query() en el instante que se quiera conocer la 
-// respuesta.
+/**
+ * Nombre: Dynamic Connectivity (offline)
+ * Descripcion: Con aristas que se agregan y borran en el tiempo, responde la cantidad de
+ *   componentes conexas en ciertos instantes. Resuelve offline con DSU con rollback sobre
+ *   un segment tree de tiempos. Cada query se agrega con query() en el instante deseado.
+ * Tiempo: O((n + q) log q * alpha)
+ * Uso: DynCon dc(n); dc.add(x,y); dc.remove(x,y); dc.query(); dc.process(); // imprime comps
+ */
 
 
 struct UnionFind {

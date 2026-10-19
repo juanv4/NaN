@@ -1,3 +1,11 @@
+/**
+ * Nombre: Segment Tree Lazy (generico: range add + range sum)
+ * Descripcion: Plantilla de segtree con lazy propagation. Por defecto suma un
+ *   valor en un rango [l,r] y consulta la suma; cambiar op(), node_update() y
+ *   los NEUT_QUERY/NEUT_UPDATE para otras operaciones (min/max, set, etc).
+ * Tiempo: build O(n), update/query O(log n)
+ * Uso: segtree_lazy st; st.build(v,n); st.update(l,r,val); st.query(l,r).ans;
+ */
 typedef long long tipo;
 
 const tipo NEUT_QUERY = 0; // REMINDER !!! 

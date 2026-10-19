@@ -1,3 +1,10 @@
+/**
+ * Nombre: Criba de primos
+ * Descripcion: Obtiene todos los primos <= n y llena min_prime[i] con el menor primo que
+ *   divide a i, lo que permite factorizar cualquier i <= n en O(log i).
+ * Tiempo: O(n log log n)
+ * Uso: vi primos = criba(n); // luego min_prime[i] para factorizar
+ */
 // Criba lineal, obtiene los primos menores al parametro
 vi min_prime; // min_prime[i] contiene el menor primo que divide a i, util para factorizar en log(i)
 

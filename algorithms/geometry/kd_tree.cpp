@@ -1,3 +1,11 @@
+/**
+ * Nombre: KD-Tree (vecino mas cercano)
+ * Descripcion: Arbol KD sobre un conjunto de puntos que responde el mas cercano
+ *   a una query con distancia Manhattan. Para 3D agregar la coordenada z. Para
+ *   excluir el propio punto de la query, descomentar el chequeo indicado.
+ * Tiempo: build O(n log n), cada query O(log n) promedio
+ * Uso: KDTree kd(vp); auto [d,q] = kd.nearest(p);
+ */
 struct pt {  // for 3D add z coordinate
 	ll x,y;
 	pt(ll x, ll y):x(x),y(y){}

@@ -1,3 +1,11 @@
+/**
+ * Nombre: Manacher (palindromos)
+ * Descripcion: Calcula d1[i] (radio del palindromo impar centrado en i) y d2[i]
+ *   (radio del par) para todo i. Con eso se conoce el palindromo mas largo
+ *   centrado en cada posicion.
+ * Tiempo: O(n)
+ * Uso: manacher(s); // llena d1[] y d2[]
+ */
 vi d1;      //d1[i] = max odd palindrome centered on i
 vi d2;      //d2[i] = max even palindrome centered on i
             //s  aabbaacaabbaa

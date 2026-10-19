@@ -1,5 +1,13 @@
-// Treap, es levemente mas poderoso que un set, pero mas lento
-// Complejidad: O(log n) por operacion
+/**
+ * Nombre: Treap por clave (BST balanceado)
+ * Descripcion: Arbol binario de busqueda balanceado con prioridades random.
+ *   Es un poco mas poderoso que un set (pero mas lento): ademas de insertar,
+ *   borrar y buscar, permite unir dos treaps (unite), pedir el k-esimo (kth)
+ *   y el lower_bound con su posicion. cnt(t) es el tamano del subarbol.
+ * Tiempo: O(log n) esperado por operacion, unite O(m log(n/m))
+ * Uso: pitem t = NULL; insert(t, new item(x)); erase(t,x);
+ *   kth(t,k); lb(t,x); unite(t,t1,t2);
+ */
 typedef struct item *pitem;
 struct item {
     int pr,key,cnt;

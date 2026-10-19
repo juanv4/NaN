@@ -1,6 +1,12 @@
-// Mo's Algorithm for range queries
-// Time: O(n*sqrt(n))
-// Usage: mo mo; mo.read_queries(m); mo.get_mo(v);
+/**
+ * Nombre: Mo's Algorithm (D-Query: distintos en rango)
+ * Descripcion: Responde queries de rango offline ordenandolas por bloque de l
+ *   y por r, moviendo los punteros de a uno. Aca resuelve la cantidad de
+ *   valores distintos en [l,r]; cambiar add()/erase() para otra query.
+ *   Requiere MAXN definido y valores de v acotados por MAXN.
+ * Tiempo: O((n + q) sqrt(n))
+ * Uso: mo M; M.read_queries(m); M.get_mo(v); // respuestas en M.ans
+ */
 
 struct query{
     int l, r, ind;

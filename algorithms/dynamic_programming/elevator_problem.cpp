@@ -1,10 +1,9 @@
-/*
- * Elevator Problem
- * 
- * Dado los pesos maximos de las personas y el peso maximo del
- * ascensor, cual es el minimo numeros de viajes necesarios para subir
- * a todas las personas: O(N * 2^N)
- * 
+/**
+ * Nombre: Elevator Problem (DP sobre subconjuntos)
+ * Descripcion: Dado el peso de cada persona y la capacidad x del ascensor, calcula el minimo
+ *   numero de viajes para subir a todos. DP sobre mascaras guardando (viajes, peso del ultimo viaje).
+ * Tiempo: O(N * 2^N)
+ * Uso: ll v = elevator_problem(n, x, peso);
  */
 
 ll elevator_problem(int n, ll x, vector <ll> &peso) {

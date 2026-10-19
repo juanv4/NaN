@@ -1,5 +1,10 @@
-// Topological sort
-// Complexity: O(n+m)
+/**
+ * Nombre: Topological Sort
+ * Descripcion: Orden topologico de un DAG. Usa priority_queue para devolver el orden
+ *   lexicograficamente menor. Si el grafo no es DAG, el resultado tiene menos de n nodos.
+ * Tiempo: O(n + m)
+ * Uso: vi orden = tsort(g, n);
+ */
 vi tsort(vector<vi> &g, int n){  // lexicographically smallest topological sort
     vi r; priority_queue<ll> q;
     vi d(2*n);

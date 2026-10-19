@@ -1,3 +1,11 @@
+/**
+ * Nombre: Imprimir __int128
+ * Descripcion: Convierte un __int128 a string digito por digito (con signo) y
+ *   sobrecarga operator<< para poder imprimirlo con cout (cin/cout no lo
+ *   soportan de fabrica).
+ * Tiempo: O(digitos) = O(39)
+ * Uso: __int128 x = ...; cout << x << "\n";
+ */
 string toString(__int128 num){
     string str;
     bool neg= num<0;

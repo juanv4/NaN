@@ -1,5 +1,13 @@
+/**
+ * Nombre: Eulerian Path / Cycle
+ * Descripcion: Halla un camino/ciclo que recorre cada arista exactamente una vez
+ *   (Hierholzer). Version dirigida por defecto (descomentar para no dirigida). Verificar
+ *   las condiciones de existencia (abajo) antes de llamar.
+ * Tiempo: O(V + E)
+ * Uso: add_edge(a,b); vector<int> path = get_path(start); // valido si SZ(path)==tot_edges+1
+ */
 // Todos tienen que cumplir: SZ(path) == tot_edges+1
-// 
+//
 // Existencia directed:
 // Path: Que el start tenga out_deg=in_deg+1
 //       Que el final tenga in_deg=out_deg+1

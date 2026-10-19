@@ -1,3 +1,11 @@
+/**
+ * Nombre: Max Flow Min Cost (SPFA, con multiedge)
+ * Descripcion: Variante de max flow min cost que soporta aristas multiples entre
+ *   el mismo par (guarda capacidades por id en un vector). Devuelve el costo
+ *   minimo, o -1 si no se alcanza el flujo 'total' pedido.
+ * Tiempo: ~O(V*E*flujo)
+ * Uso: add_edge(x,y,cap,c); tipo_cost mc = max_flow_min_cost(s,t,total);
+ */
 typedef long long tipo;
 typedef long long tipo_cost;
 const int MAXN = 505;

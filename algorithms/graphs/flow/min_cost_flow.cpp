@@ -1,12 +1,11 @@
-/*
-Max flow min cost, trabaja con Dijkstra y funciones potenciales
-en O(n^3 m).
-Tolera multiedge, pero no ciclos negativos de costo (esto es complicado en gral.)
-
-Si es necesario el min cost flow (para un flow K fijo), 
-agregar una sink mas t', unir t->t' con una arista de cap K y costo 0
-y correr flow entre s y t'.
-*/
+/**
+ * Nombre: Min Cost Max Flow (Dijkstra + potenciales)
+ * Descripcion: Flujo maximo de costo minimo con Dijkstra y funciones potenciales.
+ *   Tolera multiaristas pero no ciclos de costo negativo. Para min cost flow de un
+ *   flujo K fijo: agregar sink t', unir t->t' con cap K y costo 0, y correr entre s y t'.
+ * Tiempo: O(F * E log V), con F = flujo total enviado
+ * Uso: MCF f(n); f.add_edge(s,t,cap,cost); auto [flow,cost] = f.get_flow(s,t);
+ */
 typedef ll tf; // tipo que se usa para el flow
 typedef ll tc; // tipo que se usa para el cost
 const tf INFFLOW=1e9; 

@@ -1,3 +1,15 @@
+/**
+ * Nombre: Implicit Treap (array con split/merge)
+ * Descripcion: Treap indexado por posicion (no por clave): funciona como un
+ *   array que soporta split/merge, insertar y borrar en cualquier posicion,
+ *   queries de rango (min/suma) y lazy de reverse. Cada nodo guarda cont,
+ *   mini y sum del subarbol.
+ * Tiempo: O(log n) esperado por operacion
+ * Uso: pitem t = NULL; forn(i,n) merge(t,t,new item(v[i]));
+ *   get_sum(t,l,r); set_treap(t,p,val); find_min(t);
+ *   split(t,l,r,sz); // sz = tamano deseado de l
+ */
+
 //~ Puede realizar todas las siguientes operaciones en O(log N)
 
 //~ Dividir el arreglo en dos

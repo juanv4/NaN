@@ -1,9 +1,10 @@
-/*
-   Algoritmo para hallar las componentes fuertmente conexas.
-   Una componente es fuertemente conexa cuando para todo nodo
-   perteneciente a la componente, se puede llegar a cualquier 
-   otro nodo tambien perteneciente a la componente.
-*/
+/**
+ * Nombre: Componentes Fuertemente Conexas (Kosaraju)
+ * Descripcion: Halla las SCC de un grafo dirigido: subconjuntos maximos de nodos
+ *   donde cada par es mutuamente alcanzable. Usa dos DFS (grafo y traspuesto).
+ * Tiempo: O(V + E)
+ * Uso: SCC s(g); s.ans (lista de componentes); s.component[v] (id de v); s.scc (cantidad)
+ */
 struct SCC {
     int n, scc;
     vector<vi> g, gr, ans;

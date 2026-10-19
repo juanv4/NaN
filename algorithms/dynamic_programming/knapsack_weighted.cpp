@@ -1,6 +1,11 @@
-// If we know that sum of all elements is X, then we can find
-// all possible subset sums of a set g in O(x * sqrt(x)). This is 
-// because there cannot be more than sqrt(x) distinct elements.
+/**
+ * Nombre: Subset Sums con suma acotada
+ * Descripcion: Si la suma total de los elementos es X, calcula todas las sumas de subconjuntos
+ *   alcanzables. Aprovecha que no puede haber mas de sqrt(X) valores distintos, agrupando por
+ *   valor y repeticiones. Devuelve dp[s] = si s es alcanzable.
+ * Tiempo: O(X * sqrt(X))
+ * Uso: vector<bool> dp = knapsack_weighted(v, n);
+ */
 
 vector<bool> knapsack_weighted(vector <int> v, int n) {
 	

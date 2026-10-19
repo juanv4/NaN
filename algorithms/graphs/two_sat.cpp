@@ -1,4 +1,11 @@
-// 2sat (2-satisfiability) - O(n + m) (Korasaju)
+/**
+ * Nombre: 2-SAT
+ * Descripcion: Resuelve 2-satisfiability con SCC (Kosaraju) sobre el grafo de implicaciones.
+ *   2*x representa x y 2*x+1 representa ~x. solve() devuelve si es satisfacible y deja la
+ *   asignacion de cada variable en assignment[i].
+ * Tiempo: O(n + m)
+ * Uso: two_sat ts(2*n); ts.add_or(2*a, 2*b^1); if(ts.solve()) ts.assignment[i];
+ */
 
 struct two_sat { // 2*x representa a x, y 2*x+1 a ~x
     int tot;

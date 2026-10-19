@@ -1,3 +1,11 @@
+/**
+ * Nombre: K-esimo minimo en rango (segtree persistente)
+ * Descripcion: Con un segment tree persistente sobre valores comprimidos
+ *   responde el k-esimo menor de un rango [l,r] (k 1-indexado). Guarda una
+ *   version del arbol por cada prefijo del arreglo y busca por diferencia.
+ * Tiempo: build O(n log n), cada query O(log n)
+ * Uso: kth_min km; km.read(n); km.prepare(); km.find_kth(l,r,k);
+ */
 struct Vertex {
     Vertex *l, *r;
     ll sum;

@@ -1,4 +1,12 @@
-const ll INF = (ll)(1e15+10); // (1e18+10) 
+/**
+ * Nombre: Par de puntos mas cercano (divide & conquer, enteros)
+ * Descripcion: Distancia minima al cuadrado entre dos puntos con divide y
+ *   venceras sobre enteros (sin errores de precision). Ordenar por x con
+ *   sorting(p) antes de llamar; devuelve la distancia al cuadrado.
+ * Tiempo: O(n log n)
+ * Uso: sorting(p); ll d2 = closest(p, 0, p.size()-1);
+ */
+const ll INF = (ll)(1e15+10); // (1e18+10)
 
 template<typename T>
 using minpq = priority_queue<T, vector<T>, greater<T>>;

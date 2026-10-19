@@ -1,3 +1,11 @@
+/**
+ * Nombre: Fraccion exacta (racional)
+ * Descripcion: Numero racional n/d siempre reducido (divide por el gcd y lleva
+ *   el signo al numerador). Soporta +, -, *, / y comparaciones exactas, util
+ *   para evitar errores de punto flotante.
+ * Tiempo: O(log) por operacion (por el gcd)
+ * Uso: frac a(1,2), b(1,3); auto c = a + b; if(a < b) ...
+ */
 struct frac {
     ll n, d;
     frac(ll x, ll y) {

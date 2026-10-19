@@ -1,3 +1,11 @@
+/**
+ * Nombre: K-esima substring (contando repeticiones)
+ * Descripcion: Con un suffix array devuelve la k-esima substring en orden
+ *   lexicografico contando cada aparicion (con repeticiones). Recorre el SA con
+ *   busquedas binarias caracter por caracter.
+ * Tiempo: O(n log n)
+ * Uso: string s = get_kth(pal, k);
+ */
 typedef string str;
 #define RB(x) (x<n?r[x]:0)
 

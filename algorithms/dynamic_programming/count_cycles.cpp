@@ -1,6 +1,11 @@
-// Count the number of cycles in a graph
-// Time: O(n*2^n)
-// Usage: count_cycles(n); // n --> number of nodes
+/**
+ * Nombre: Contar ciclos (DP sobre subconjuntos)
+ * Descripcion: Cuenta la cantidad de ciclos simples en un grafo con DP sobre mascaras de
+ *   bits (para cada subconjunto, se fija el menor nodo como inicio para no contar repetidos).
+ *   El grafo se pasa en la matriz g[][].
+ * Tiempo: O(n^2 * 2^n)
+ * Uso: ll c = count_cycles(n); // n = cantidad de nodos, g[i][j] = adyacencia
+ */
 const int MAXN = 20;
 int g[MAXN][MAXN];
 

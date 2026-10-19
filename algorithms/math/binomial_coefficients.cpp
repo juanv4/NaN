@@ -1,3 +1,11 @@
+/**
+ * Nombre: Coeficientes Binomiales
+ * Descripcion: Calcula C(n,k). Version DP con el triangulo de Pascal (binom[i][j]), y
+ *   version O(N+logN) precomputando factoriales/inversos (fact, ifact) para responder
+ *   binom(n,k) en O(1) cada una.
+ * Tiempo: DP O(n^2); precompute O(n + log MOD), query O(1)
+ * Uso: auto b = binomial(n); // tabla  |  ll c = binom(n, k); // formula mod
+ */
 //~ Solucion DP
 
 vector<vector<ll>> binomial(int n) { // O (N^2)

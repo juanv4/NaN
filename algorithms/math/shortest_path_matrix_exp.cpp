@@ -1,3 +1,12 @@
+/**
+ * Nombre: Camino minimo con exactamente k aristas (min-plus matrix)
+ * Descripcion: Exponenciacion de matrices en el semianillo (min,+): el
+ *   producto usa min en vez de suma y suma en vez de producto. b^k[i][j] es
+ *   el costo minimo de ir de i a j usando exactamente k aristas. Se arranca
+ *   de la matriz de adyacencia con INF donde no hay arista.
+ * Tiempo: O(n^3 log k)
+ * Uso: Matrix r = be(adj, k); // r[i][j] = costo minimo con k aristas
+ */
 #define INF 2e18
 
 typedef vector<vector<ll> > Matrix;

@@ -1,6 +1,14 @@
+/**
+ * Nombre: Par de puntos mas cercano (sweep line)
+ * Descripcion: Distancia minima entre dos puntos y sus indices con barrido
+ *   horizontal y un set ordenado por y (mantiene solo puntos a distancia < best
+ *   en x). Ordenar los puntos por x antes de llamar.
+ * Tiempo: O(n log n)
+ * Uso: sort(all(p)); auto [d,i,j] = closest(p);
+ */
 typedef long double tipo;
 
-struct punto { 
+struct punto {
     tipo x, y; int ind; 
     punto operator -(punto p) const {return {x-p.x,y-p.y};}
     bool operator <(punto p) const {return x != p.x ? x < p.x : y < p.y;}

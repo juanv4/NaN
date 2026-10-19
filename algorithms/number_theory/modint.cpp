@@ -1,5 +1,12 @@
+/**
+ * Nombre: Modular Int (modint)
+ * Descripcion: Template (de benq) que envuelve un entero y hace toda la aritmetica modulo
+ *   MOD automaticamente (+, -, *, / con inverso, potencias, I/O). Evita tener que reducir a mano.
+ * Tiempo: O(1) por operacion (O(log MOD) la division/inverso)
+ * Uso: typedef modular<ll> mi; mi a = 5, b = 3; mi c = a*b + 1;
+ */
 // Template de benq para enteros que tienen que ser tomados MOD
-// se define un tipo mi como "typedef modular<ll> mi" 
+// se define un tipo mi como "typedef modular<ll> mi"
 template<class T> struct modular {
     T val;
     explicit operator T() const { return val; }

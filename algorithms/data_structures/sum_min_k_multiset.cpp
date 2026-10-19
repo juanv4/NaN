@@ -1,3 +1,11 @@
+/**
+ * Nombre: Suma de los k minimos (dos multisets)
+ * Descripcion: Mantiene un multiset partido en 'low' (los k menores) y 'high'
+ *   (el resto) para consultar la suma de los k menores y el k-esimo elemento,
+ *   con inserciones y borrados dinamicos.
+ * Tiempo: O(log n) amortizado por operacion
+ * Uso: SumMinKMultiset s; s.insert(x); s.erase(x); s.sumMinK(k); s.kth_element(k);
+ */
 typedef int tipo;
 
 struct MultisetWithSum {

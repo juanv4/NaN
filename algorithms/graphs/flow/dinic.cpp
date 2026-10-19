@@ -1,10 +1,12 @@
-// Dinic: Max Flow en O(V^2 E). Para el grafo bipartito con source
-// y sink dummy, funciona en O(sqrt(V) E). Equivalente a Hopcroft-Karp.
-
-// Matching: aristas saturadas (que no incluyan source/sink)
-// Min cut: nodos con dist>=0 vs nodos con dist<0
-// MVC: Nodos izquierda con dist<0 + nodos derecha con dist>0
-// Maximum Independent Set: complemento de MVC (N-MVC)
+/**
+ * Nombre: Dinic (Max Flow)
+ * Descripcion: Flujo maximo. Con source/sink dummy sobre grafo bipartito corre en
+ *   O(sqrt(V) E) (equivalente a Hopcroft-Karp). Tras correr max_flow:
+ *   Matching: aristas saturadas (sin source/sink). Min cut: nodos con dist>=0 vs dist<0.
+ *   MVC: izquierda con dist<0 + derecha con dist>0. Max Independent Set: complemento (N-MVC).
+ * Tiempo: O(V^2 E) general, O(sqrt(V) E) en bipartito
+ * Uso: Dinic d(n); d.add_edge(s,t,cap); ll f = d.max_flow(src,dst);
+ */
 struct Dinic{
     int nodes,src,dst;
     vector<int> dist,q,work;

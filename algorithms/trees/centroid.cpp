@@ -1,3 +1,11 @@
+/**
+ * Nombre: Centroid Decomposition (arbol de centroides)
+ * Descripcion: Descomposicion en centroides que arma el centroid tree (c_tree),
+ *   guarda el padre de cada nodo en la descomposicion (fat) y la raiz (centro).
+ *   Usa arreglos globales de tamano MAXN.
+ * Tiempo: build O(n log n)
+ * Uso: centroid c(g, n); // c.c_tree, c.fat, c.centro
+ */
 struct centroid {
 	vector<vector<int>> g; int n;
 	vector<vector<int>> c_tree;

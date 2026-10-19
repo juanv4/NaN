@@ -1,5 +1,15 @@
-//~ Puede resolver Kth Min en O(Q * log^3 N)
-//~ La funcion query(l,r,k) retorna la cantidad de numeros en el 
+/**
+ * Nombre: Merge Sort Tree
+ * Descripcion: Segment tree donde cada nodo guarda su intervalo ordenado
+ *   (mergeando el de sus hijos). Responde cuantos elementos de [l,r] son
+ *   <= k con binary search en cada nodo, y con busqueda binaria sobre la
+ *   respuesta consigue el k-esimo minimo. Tambien cuenta inversiones (inv).
+ * Tiempo: build O(n log n), query O(log^2 n), find_kth O(log^3 n),
+ *   modificar O(n log n) (reconstruye los nodos del camino)
+ * Uso: segtree st; st.construir(v,n); st.query(l,r,k); st.find_kth(l,r,k);
+ */
+
+//~ La funcion query(l,r,k) retorna la cantidad de numeros en el
 //~ intervalo que son menores o iguales a k en [L,R] en O(log^2 N)
 
 typedef long long tipo;

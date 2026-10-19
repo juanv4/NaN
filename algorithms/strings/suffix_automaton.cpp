@@ -1,3 +1,11 @@
+/**
+ * Nombre: Suffix Automaton
+ * Descripcion: Automata de sufijos: sa_extend agrega los caracteres de a uno.
+ *   Permite contar las substrings distintas (count_substr) y hallar la k-esima
+ *   substring distinta (find_kth) recorriendo el automata.
+ * Tiempo: build O(n log SIGMA)
+ * Uso: sa_init(); for(char c: s) sa_extend(c); count_substr(0);
+ */
 struct state {
     int len, link;
     map<char,int> next;

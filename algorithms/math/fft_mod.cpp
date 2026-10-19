@@ -1,10 +1,11 @@
 /**
-Implementacion iterativa de FFT and FFTmod. O(N log N)
-
-La precision de la FFT depende de la respuesta.
-x <= 5e14 (double), x <= 1e18(long double)
-donde x = max(ans[i]) para la FFT, y x = N*mod for FFTmod
-**/
+ * Nombre: FFT y FFT mod
+ * Descripcion: Implementacion iterativa de FFT para multiplicar polinomios, y variante
+ *   FFTmod (partiendo en dos mitades) para coeficientes modulares. La precision depende de
+ *   la respuesta: x <= 5e14 (double) o 1e18 (long double), con x=max(ans[i]) en FFT y x=N*mod en FFTmod.
+ * Tiempo: O(N log N)
+ * Uso: vi c = mul(a, b);  // o vi c = mul_mod(a, b, mod);
+ */
 
 typedef double ld;
 typedef complex<ld> cd;

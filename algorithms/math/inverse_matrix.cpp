@@ -1,3 +1,11 @@
+/**
+ * Nombre: Inversa de una matriz (modular)
+ * Descripcion: Invierte una matriz cuadrada modular por Gauss-Jordan. Devuelve el
+ *   determinante y la inversa; si det==0 la matriz es singular (no hay inversa).
+ *   Requiere las funciones modulares (mul, divi) del snippet de Gauss.
+ * Tiempo: O(n^3)
+ * Uso: auto [det, inv] = inverse_matrix(x); // x = vector<vector<ll>>
+ */
 // modular functions in gauss
 
 pair<ll,vector<vi>> inverse_matrix(vector<vector<ll> > &x) { 

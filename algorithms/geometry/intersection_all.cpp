@@ -1,3 +1,12 @@
+/**
+ * Nombre: Intersecciones geometricas (rectas, segmentos, circulos)
+ * Descripcion: Coleccion sobre la struct punto: recta por 2 puntos o por
+ *   Ax+By+C, interseccion recta-recta / segmento-segmento / recta-circulo /
+ *   circulo-circulo, distancia punto-recta, proyeccion, area de interseccion
+ *   de dos circulos y tangentes comunes. Requiere el template de punto.
+ * Tiempo: O(1) cada operacion
+ * Uso: recta r(p1,p2); inter_seg(r1,r2,ans); inter_circ_circ(a,b);
+ */
 struct recta { // Puede usarse para segmentos ([p,p+v] o alpha = [0,1])
     punto v, p; // v -> director, p -> punto por donde pasa
     recta(punto p1, punto p2) { v = (p2-p1); p = p1;}

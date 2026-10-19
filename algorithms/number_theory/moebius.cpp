@@ -1,3 +1,11 @@
+/**
+ * Nombre: Criba lineal de Moebius
+ * Descripcion: Criba lineal que calcula la funcion de Moebius mu[i] para todo
+ *   i < n, junto con la lista de primos. mu = 0 si i tiene un factor cuadrado;
+ *   +/-1 segun la paridad de factores primos distintos.
+ * Tiempo: O(n)
+ * Uso: sieve_moebius(n); // llena moebius[] y prime
+ */
 vector<int> prime;
 bool is_composite[MAXN];
 int moebius[MAXN];

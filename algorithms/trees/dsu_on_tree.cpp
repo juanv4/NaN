@@ -1,6 +1,14 @@
+/**
+ * Nombre: DSU on Tree (small to large)
+ * Descripcion: Para cada subarbol calcula, con small-to-large sobre histogramas
+ *   de colores, el color mas frecuente (ans[v] guarda la suma de los colores mas
+ *   frecuentes del subarbol de v). Cambiar add()/dfs para otra query.
+ * Tiempo: O(n log^2 n)
+ * Uso: DSU_on_Tree d(n, g, color); // resultado en d.ans[v]
+ */
 #define rs(n) resize(n)
 
-struct DSU_on_Tree { // count #vertex with color c in subtree v	
+struct DSU_on_Tree { // count #vertex with color c in subtree v
 	vector<map<ll, ll>> h; // histogram [color,count]
 	vi color, link, ans;
 	vii sum;

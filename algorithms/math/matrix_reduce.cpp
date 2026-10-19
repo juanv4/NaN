@@ -1,3 +1,12 @@
+/**
+ * Nombre: Eliminacion Gaussiana (reduce)
+ * Descripcion: Lleva la matriz a su forma escalonada reducida (in-place) con
+ *   pivoteo parcial y devuelve el determinante (0 si es singular). Para
+ *   resolver un sistema pasar la matriz aumentada [A|b]: la solucion queda en
+ *   la ultima columna. Requiere EPS definido.
+ * Tiempo: O(n^2 m)
+ * Uso: double det = reduce(x); // x queda reducida
+ */
 double reduce(vector<vector<double> > &x) { // returns determinant
     int n=x.size(),m=x[0].size();
     int i=0,j=0;double r=1.;

@@ -1,12 +1,10 @@
-/*
- * Numeros complejos
- * 
- * Tener en cuentas que:
- * 
- * - No se pueden leer complejos directamente con cin >>; 
- * - Una vez definidas las macros, no podemos definir variables con el
- * 	 mismo nombre
- * 
+/**
+ * Nombre: Puntos con std::complex
+ * Descripcion: Usar std::complex como tipo punto (real=x, imag=y) para geometria. Notas:
+ *   no se pueden leer con cin>> directamente; y una vez definidas las macros x/y no se
+ *   pueden usar variables con esos nombres.
+ * Tiempo: O(1) por operacion
+ * Uso: typedef complex<double> complejo; complejo p(x,y); p.x, p.y;
  */
 
 typedef complex<double> complejo;
